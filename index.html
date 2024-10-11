@@ -1,8 +1,482 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title> Shadow
-    </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/coding.png" type="image/png" />
+    <title> Shadow Tracker </title>
   </head>
-  <body> Tracker
+  <body>
+    <header class="header">
+      <div class="header__socials">
+        <a href="mailto:ry6160012@gmail.com"><i class="ri-mail-fill"></i></a>
+        <a href="https://www.linkedin.com/in/rahul-kumar-yadav-401b33251/"><i class="ri-linkedin-fill"></i></a>
+        <a href="https://github.com/ShadowTracker13"><i class="ri-github-fill"></i></a>
+      </div>
+      <nav>
+        <div class="nav__bar">
+          <div class="nav__header">
+            <div class="nav__logo">
+              <a href="#">Web Dev & Bug Hunter<span></span></a>
+            </div>
+            <div class="nav__menu__btn" id="menu-btn">
+              <span><i class="ri-menu-3-line"></i></span>
+            </div>
+          </div>
+          <ul class="nav__links" id="nav-links">
+            <li class="link"><a href="#home">Home</a></li>
+            <li class="link"><a href="#about">About</a></li>
+            <li class="link"><a href="#project">Projects</a></li>
+            <li class="link"><a href="#service">Services</a></li>
+            <li class="link"><a href="#skills">Skills</a></li>
+            <li class="link"><a href="#Certificate">Certificate</a></li>
+            <li class="link btn"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="section__container header__container" id="home">
+        <div class="header__image">
+          <img src="assets/header.png" alt="header" />
+        </div>
+        <div class="header__content">
+          <h4>Crafting Digital Excellence</h4>
+          <h1>Hi, I am a Web Developer & Bug Hunter.</h1>
+          
+            <p>
+            As a dedicated Web Developer and passionate Bug Hunter, 
+            I specialize in crafting seamless
+             digital experiences and ensuring flawless functionality. 
+             With a background in Cyber Security and Forensics, 
+             I have a unique perspective on developing secure and efficient websites. 
+             My expertise in React, Node.js, and the MERN Stack 
+             allows me to build dynamic and scalable web applications.
+          </p>
+          <button class="btn" onclick="window.location.href='mailto:maddyakash2136@gmail.com';">Hire Me Now</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container about__container" id="about">
+      <div class="about__image">
+        <img src="assets/about.jpg" alt="about" />
+      </div>
+      <div class="about__content">
+        <h2 class="section_header">Hi There, I'm Rahul – Web Dev & Bug Hunter</h2>
+        <p>A passionate web developer with a strong focus on creating secure,
+           efficient, and dynamic web solutions.
+            My journey began with a fascination for coding
+             and has evolved into a robust skill 
+             set in both front-end and back-end development.
+            </p>
+            <h4>Driven by a commitment to user experience, 
+              I continually stay updated with industry trends, 
+              ensuring that every project I work on exceeds expectations.
+            </h4>
+        <div class="about__btns">
+          <a href="assets/Rahul Kumar Yadav CV.pdf" download class="download__btn">
+            Download CV
+          </a>
+          <a href="mailto:ry6160012@gmail.com"><i class="ri-mail-fill"></i></a>
+          <a href="https://www.linkedin.com/in/rahul-kumar-yadav-401b33251/"><i class="ri-linkedin-fill"></i></a>
+          <a href="https://github.com/ShadowTracker13"><i class="ri-github-fill"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container banner__container">
+      <div class="banner__card">
+        <span><i class="ri-pen-nib-line"></i></span>
+        <div>
+          <h4>Design</h4>
+          <p>
+            In the design phase, 
+            I focus on creating intuitive and user-friendly interfaces that blend aesthetics with functionality. 
+            By using tools like Adobe XD, Figma, and Sketch, 
+            I ensure that the user experience is seamless while maintaining a modern and clean look. 
+            My goal is to craft designs that not only look appealing but also offer an exceptional user journey.
+          </p>
+        </div>
+      </div>
+      <div class="banner__card">
+        <span><i class="ri-layout-masonry-line"></i></span>
+        <div>
+          <h4>Development</h4>
+          <p>
+            As a full-stack developer, 
+            I specialize in building secure, dynamic, and scalable web applications. 
+            Using technologies like React, Node.js, JavaScript, and MongoDB, 
+            I create both front-end interfaces and back-end services that ensure robust performance. 
+            My expertise also extends to databases, 
+            allowing for smooth data integration and management.
+          </p>
+        </div>
+      </div>
+      <div class="banner__card">
+        <span><i class="ri-checkbox-line"></i></span>
+        <div>
+          <h4>Testing & QA</h4>
+          <p>
+            Ensuring a flawless user experience requires rigorous testing and quality assurance. 
+            I leverage automated testing tools like Selenium and perform manual testing to identify and resolve bugs and vulnerabilities. 
+            By adhering to industry standards, 
+            I make sure that every application is fully optimized, secure, and meets user expectations.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container project__container" id="project">
+      <div class="project__header">
+        <h2 class="section__header">Our Projects</h2>
+        <div class="project__nav">
+          <button
+            class="btn project__btn mixitup-control-active"
+            data-filter="all"
+          >
+            All
+          </button>
+          <button class="btn project__btn" data-filter=".web">Web Apps</button>
+          <button class="btn project__btn" data-filter=".game">Games</button>
+          <button class="btn project__btn" data-filter=".design">
+            Designs
+          </button>
+        </div>
+      </div>
+      <!--<div class="project__grid">
+        <div class="project__card mix web">
+          <img src="assets/project-1.jpg" alt="project" />
+        </div>
+        <div class="project__card mix web">
+          <img src="assets/project-2.jpg" alt="project" />
+        </div>
+        <div class="project__card mix web">
+          <img src="assets/project-3.jpg" alt="project" />
+        </div>
+        <div class="project__card mix web">
+          <img src="assets/project-4.jpg" alt="project" />
+        </div>
+        <div class="project__card mix web">
+          <img src="assets/project-5.jpg" alt="project" />
+        </div>
+        <div class="project__card mix web">
+          <img src="assets/project-6.jpg" alt="project" />
+        </div>
+      </div>-->
+      <div class="project__grid">
+        <h2 class="section__header">Comming Soon</h2>
+      </div>
+    </section>
+
+    <section class="section__container service__container" id="service">
+      <p class="section__subheader">Our Services</p>
+      <h2 class="section__header">What We Do?</h2>
+      <p class="section__description">
+        We specialize in a wide range of web development services designed to
+        transform your vision into reality.
+      </p>
+      <div class="service__grid">
+        <div class="service__card">
+          <span><i class="ri-window-fill"></i></span>
+          <h4>Website Design</h4>
+          <p>
+            We craft user-friendly interfaces that engage visitors and help you
+            achieve your online goals with minimum efforts.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-store-line"></i></span>
+          <h4>E-commerce Solutions</h4>
+          <p>
+            We build secure, scalable, and user-centric online stores that
+            enhance the shopping experience and drive conversions.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-smartphone-line"></i></span>
+          <h4>Mobile Development</h4>
+          <p>
+            From iOS to Android, we create apps that deliver seamless
+            performance and keep users coming back for more.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-share-fill"></i></span>
+          <h4>Content Marketing</h4>
+          <p>
+            Our services include creating blog posts, videos, and social media
+            content that drives traffic and engagement.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-seo-line"></i></span>
+          <h4>SEO</h4>
+          <p>
+            Our SEO strategies are tailored to your specific goals, helping you
+            reach your target audience and grow your online presence.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-share-circle-line"></i></span>
+          <h4>Digital Marketing</h4>
+          <p>
+            From pay-per-click (PPC) advertising to social media marketing, we
+            ensure your brand stands out in the crowded digital landscape.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section_container skills_container" id="skills">
+      <p class="section__subheader">Skills</p>
+      <h2 class="section__header">My Key Skills</h2>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Skill 1 -->
+          <div class="swiper-slide">
+            <div class="skills__card">
+              <img src="assets/skill-1.jpg" alt="JavaScript" />
+              <div>
+                <p>
+                  <strong>JavaScript:</strong> Experienced in building dynamic and interactive web applications, ensuring seamless user experiences.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Skill 2 -->
+          <div class="swiper-slide">
+            <div class="skills__card">
+              <img src="assets/skill-2.jpg" alt="React" />
+              <div>
+                <p>
+                  <strong>React:</strong> Proficient in developing responsive, reusable UI components with efficient state management.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Skill 3 -->
+          <div class="swiper-slide">
+            <div class="skills__card">
+              <img src="assets/skill-3.jpg" alt="Node.js" />
+              <div>
+                <p>
+                  <strong>Node.js:</strong> Back-end development expertise, creating scalable APIs and handling real-time data with ease.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Skill 4 -->
+          <div class="swiper-slide">
+            <div class="skills__card">
+              <img src="assets/skill-4.jpg" alt="MySQL & MongoDB" />
+              <div>
+                <p>
+                  <strong>MySQL & MongoDB:</strong> Extensive experience in relational and non-relational databases, proficient in queries and optimization.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Skill 5 -->
+          <div class="swiper-slide">
+            <div class="skills__card">
+              <img src="assets/skill-5.jpg" alt="Git" />
+              <div>
+                <p>
+                  <strong>Git:</strong> Version control expertise, enabling smooth collaboration on projects with branching and merging.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section> 
+    
+    <!-- CSS to fix image size and layout -->
+    <style>
+      .skills__container {
+        padding: 50px 0;
+        text-align: center;
+      }
+    
+      .skills__card {
+        display: flex;
+        align-items: center;
+        background: var(--primary-color-dark );
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px rgb(238, 229, 51);
+        transition: transform 0.3s ease;
+      }
+    
+      .skills__card:hover {
+        transform: translateY(-10px); 
+      }
+    
+      .skills__card img {
+        width: 80px;  /* Reduced size */
+        height: 80px;
+        object-fit: contain;
+        margin-right: 20px;
+        border-radius: 8px;
+      }
+    
+      .skills__card p {
+        margin: 0;
+        font-size: 16px;
+        color: #000;
+      }
+    
+      .skills__card strong {
+        color: #6c63ff;
+      }
+    
+      .swiper-container {
+        width: 80%;
+        margin: 0 auto;
+      }
+    
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .swiper-pagination-bullet {
+        background-color: #f1f507;
+      }
+    </style>
+    
+    <!-- Add Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <script>
+      var swiper = new Swiper('.swiper', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    </script>
+    <section class="section__container blog__container" id="Certificate">
+      <p class="section__subheader">Certificate</p>
+      <h2 class="section__header">Showcasing My expertise</h2>
+      <div class="blog__grid">
+        <div class="blog__card">
+          <img src="assets/certificate-1.jpg" alt="Certificate" />
+          <p>The Bits and Bytes of Computer Networking</p>
+          <h4>The Bits and Bytes of Computer Networking certificate from Google.</h4>
+          <a href="#">Read More</a>
+        </div>
+        <div class="blog__card">
+          <img src="assets/certificate-2.jpg" alt="Certificate" />
+          <p>Introduction to Dark Web, Anonymity, and Cryptocurrency</p>
+          <h4>Certificate covering the fundamentals of Dark Web, Anonymity, and Cryptocurrency.</h4>
+          <a href="#">Read More</a>
+        </div>
+        <div class="blog__card">
+          <img src="assets/certificate-3.jpg" alt="Certificate" />
+          <p>Python Essentials</p>
+          <h4>Certified for completion of Python Essentials Course.</h4>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section_container contact_container" id="contact">
+      <p class="section__subheader">Contact Us</p>
+      <h2 class="section__header">Get In Touch</h2>
+      <form id="contactForm" action="https://formspree.io/f/xzzbplor" method="POST" class="contact__form">
+        <div class="input__row">
+          <input type="text" name="firstName" placeholder="First Name" required />
+          <input type="text" name="lastName" placeholder="Last Name" required />
+        </div>
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="text" name="description" placeholder="Description" required />
+        <button class="btn" type="submit">Submit</button>
+      </form>
+    </section>
+    
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+    
+        // Formspree submission using Fetch API
+        const formData = new FormData(this);
+    
+        fetch(this.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        }).then(response => {
+          if (response.ok) {
+            // Redirect to thank you page after successful submission
+            window.location.href = "ThankYou/";
+          } else {
+            alert('Oops! There was a problem submitting your form.');
+          }
+        }).catch(error => {
+          alert('Oops! There was a problem submitting your form.');
+        });
+      });
+    </script>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h5><a href="#">Rahul</a></h5>
+          <p>
+            I'm a dedicated web developer with a creative flair and a penchant
+            for turning lines of code into captivating online experiences.
+          </p>
+          <div class="footer__socials">
+            <a href="mailto:ry6160012@gmail.com"><i class="ri-mail-fill"></i></a>
+           <a href="https://www.linkedin.com/in/rahul-kumar-yadav-401b33251/"><i class="ri-linkedin-fill"></i></a>
+          <a href="https://github.com/ShadowTracker13"><i class="ri-github-fill"></i></a>
+            <a href="#"><i class="ri-twitter-x-line"></i></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <div class="footer__links">
+            <a href="#service">Web Design</a>
+            <a href="#service">App Design</a>
+            <a href="#service">Web Development</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Support</h4>
+          <div class="footer__links">
+            <a href="#contact">Contact</a>
+            <a href="mailto:ry6160012@gmail.com">Mail US</a>
+            <a href="Privacy-Policy/">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 Rahul . All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
